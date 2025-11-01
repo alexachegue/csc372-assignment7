@@ -1,0 +1,55 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #f9f7f3;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.section, .search-section, .categories-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.joke-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f8e8ff;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #c98cfb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #973de1;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#random-joke {
+    background-color: #fff6d3;
+    padding: 20px;
+    border-radius: 5px;
+}

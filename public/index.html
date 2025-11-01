@@ -1,0 +1,54 @@
+<!-- 
+ Name: Alexa Chegue
+ Date: 11/1/25
+ This is a page that showcases the endpoints for a jokebook.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokebook</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jokebook</h1>
+
+    <!-- Random joke on landing -->
+     <div class="random-joke-section">
+        <h2>Random Joke of the Day</h2>
+        <div id="random-joke"> </div>
+     </div>
+
+
+
+     <!-- View list of all joke categories by calling first endpoint -->
+     <div class="categories-section">
+        <h2>Browse Joke Categories</h2>
+        <div id="categories-list"></div>
+
+        <!-- Search field that lets users specify a category to view jokes-->
+        <div class="search-controls">
+                <input type="text" id="category-search" placeholder="Enter category (e.g., funnyJoke)">
+                <button id="search-btn">Search</button>
+        </div>
+        <div id="search-results"></div>
+     </div>
+
+    
+    <!-- Form that lets a user create a new joke by calling last endpoint and display the jokes in that category -->
+     <div class="section">
+        <h2>Add a New Joke</h2>
+        <form id="add-joke-form">
+            <input type="text" id="new-category" placeholder="Category" required>
+            <input type="text" id="new-setup" placeholder="Joke Setup" required>
+            <input type="text" id="new-delivery" placeholder="Punchline" required>
+            <button type="submit">Add Joke</button>
+        </form>
+        <div id="add-result"></div>
+     </div>
+
+</body>
+</html>
